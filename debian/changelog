@@ -1,3 +1,9 @@
+libmarian-lite (0.2.10) unstable; urgency=medium
+
+  * Attemt to fix build in CI
+
+ -- Merlijn Wajer <merlijn@wizzup.org>  Sun, 22 Jan 2023 13:52:35 +0100
+
 libmarian-lite (0.2.9) unstable; urgency=medium
 
   * Remove pkgconfig dependency from CMake config
