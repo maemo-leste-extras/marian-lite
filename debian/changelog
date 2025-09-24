@@ -1,3 +1,9 @@
+libmarian-lite (0.2.12) unstable; urgency=medium
+
+  * pkg-config cpuinfo
+
+ -- Sander <code@kroket.io>  Wed, 24 Sep 2025 12:53:35 +0100
+
 libmarian-lite (0.2.11) unstable; urgency=medium
 
   * Remove dependency cpuinfo

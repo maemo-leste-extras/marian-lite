@@ -26,6 +26,15 @@ option(USE_INTGEMM "intgemm" OFF)  # will be set to 'ON' when using x86_64
 option(USE_RUY "Google Ruy" OFF)  # will be set to 'ON' when using ARM
 option(USE_SIMD_UTILS "Enable simde to target instruction sets" OFF)  # will be set to 'ON' when using ARM
 
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(CPUINFO REQUIRED IMPORTED_TARGET libcpuinfo)
+
+# custom imported target for cpuinfo because we are not using CMake
+# https://git.maemo.org/leste/bugtracker/issues/819
+add_library(cpuinfo::cpuinfo INTERFACE IMPORTED)
+target_link_libraries(cpuinfo::cpuinfo INTERFACE PkgConfig::CPUINFO)
+target_include_directories(cpuinfo::cpuinfo INTERFACE ${CPUINFO_INCLUDE_DIRS})
+
 include(FindCcache)
 
 if(${CMAKE_HOST_SYSTEM_PROCESSOR} MATCHES "arm*")
