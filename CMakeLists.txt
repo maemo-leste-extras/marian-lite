@@ -46,7 +46,6 @@ if(${CMAKE_HOST_SYSTEM_PROCESSOR} MATCHES "arm*")
     set(USE_RUY TRUE)
     set(USE_SIMD_UTILS ON)
 
-    find_package(cpuinfo REQUIRED)
     add_compile_options(-fno-strict-aliasing -Wno-comment)
     add_compile_definitions(ARM FMA SSE)
 
