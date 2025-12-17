@@ -1,19 +1,6 @@
 #include "integer_common.h"
 
-#ifdef ARM
-  #define SIMDE_ENABLE_NATIVE_ALIASES
-  #include <simde/x86/sse.h>
-  #include <simde/x86/sse2.h>
-  #include <simde/x86/avx.h>
-  #include <simde/x86/avx2.h>
-  #include <arm_neon.h>
-#else
-  #include <emmintrin.h>
-  #include <immintrin.h>
-  #include <tmmintrin.h>
-  #include <xmmintrin.h>
-#endif
-
+#include "neonblabla.h"
 
 namespace marian {
 namespace cpu {

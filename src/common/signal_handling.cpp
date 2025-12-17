@@ -1,5 +1,6 @@
 #include "marian-lite/common/logging.h"
 #include "signal_handling.h"
+#include <cstdint>
 
 // The simplest (and recommended) way to handle signals is to simply set a flag
 // in the signal handler and check that flag later.

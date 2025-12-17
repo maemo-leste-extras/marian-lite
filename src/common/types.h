@@ -22,9 +22,12 @@
   #define SIMDE_ENABLE_NATIVE_ALIASES
   #include <simde/x86/sse.h>
   #include <simde/x86/sse2.h>
+  #include <simde/x86/sse4.1.h>
   #include <simde/x86/avx.h>
   #include <simde/x86/avx2.h>
+#if __GNUC__ <= 13
   #include <arm_neon.h>
+#endif
 #else
   #include <immintrin.h>
 #endif

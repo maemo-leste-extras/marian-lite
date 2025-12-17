@@ -20,7 +20,7 @@ Build-Depends: debhelper (>= 10),
     libcli11-dev,
     cpio,
     libcpuinfo-dev,
-    libruy | libintgemm,
+    libintgemm [amd64] | libruy [arm64 armhf],
     libsqlitecpp-dev,
 Homepage: https://github.com/maemo-leste/marian-lite
 XSBC-Bugtracker: https://github.com/maemo-leste/marian-lite/issues
