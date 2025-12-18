@@ -40,5 +40,5 @@ Depends: ${shlibs:Depends}, ${misc:Depends},
     libpcre2-32-0,
     zlib1g,
     libcpuinfo0,
-    libruy | libintgemm,
+    libintgemm [amd64] | libruy [arm64 armhf],
 Description: Small C++ library for cross-platform Unicode path management

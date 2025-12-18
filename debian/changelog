@@ -1,3 +1,9 @@
+libmarian-lite (0.2.14) unstable; urgency=medium
+
+  * libintgemm [amd64] | libruy [arm64 armhf]
+
+ -- Sander <code@kroket.io>  Thu, 18 Dec 2025 12:53:35 +0100
+
 libmarian-lite (0.2.13) unstable; urgency=medium
 
   * support for gcc 14
